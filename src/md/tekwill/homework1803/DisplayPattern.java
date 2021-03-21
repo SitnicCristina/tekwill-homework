@@ -1,4 +1,4 @@
-package md.tekwill.exercise1803;
+package md.tekwill.homework1803;
 
 public class DisplayPattern {
     public static void main(String[] arg){
