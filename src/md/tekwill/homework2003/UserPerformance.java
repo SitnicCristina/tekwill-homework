@@ -12,12 +12,12 @@ public class UserPerformance {
         double distance_m = 2500;
 
         // time 5:56:23
-        double hour = 5;
-        double minutes = 56;
-        double second = 23;
+        int hour = 5;
+        int minutes = 56;
+        int second = 23;
 
-        double time_to_seconds = hour*60*60 + minutes*60 + second;
-        double time_to_hour = hour + minutes/60 + second/60/60;
+        double time_to_seconds = hour*3600.0 + minutes*60 + second;
+        double time_to_hour = hour + minutes/60 + second/3600f;
 
         double speed_m_s = distance_m/time_to_seconds;
         double speed_km_h = distance_m/1000/time_to_hour;

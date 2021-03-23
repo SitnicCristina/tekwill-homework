@@ -26,12 +26,12 @@ public class Operators {
 
         //                 22 > 30  &&  19<=19
         //                  false   AND true  = false
-        //                   b=21       a=19
+        //                   b=21       a=19 scurt circuit
         System.out.println(b-- > 30 && a++ <= 19);//false
 
         //                 30>19   && 19<21 || 31<30
         //                 true    AND true OR false = true
-        //                 c=31  a=19  b=21    c=32
+        //                 c=31  a=19  b=21    c=31  scurt circuit
         System.out.println(c++ > a && a < b || c++ < 30);//true
 
         //from previous statement a=19

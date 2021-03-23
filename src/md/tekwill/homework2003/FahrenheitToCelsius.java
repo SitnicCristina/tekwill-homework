@@ -5,10 +5,14 @@ Input a degree in Fahrenheit: 212
 Expected Output:
 212.0 degree Fahrenheit is equal to 100.0 in Celsius
 */
+import java.util.Scanner;
 
 public class FahrenheitToCelsius {
     public static void main(String[] arg){
-        double fahrenheit = 212;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the Fahrenheit to convert in Celsius ex 212 :");
+        double fahrenheit = in.nextDouble();
+
         double celsius =((fahrenheit-32)*5)/9;
         System.out.println(fahrenheit +" degree Fahrenheit is equal to "+celsius+" in Celsius");
     }
