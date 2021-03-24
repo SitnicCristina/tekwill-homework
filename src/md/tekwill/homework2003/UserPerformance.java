@@ -7,9 +7,19 @@ Expected Output :
 Acest exercițiu este practică cu operatorul %
 */
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class UserPerformance {
-    public static void main(String[] arg){
-        double distance_m = 2500;
+    public static void main(String[] arg) throws IOException {
+        System.out.print("Input the distance: ");
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String newLine = bufferedReader.readLine();
+        // double distance_m = 2500;
+        double distance_m = Double.parseDouble(newLine);
+        char[] buffer = new char[20];
+        bufferedReader.read(buffer, 0, buffer.length);
 
         // time 5:56:23
         int hour = 5;
@@ -17,7 +27,7 @@ public class UserPerformance {
         int second = 23;
 
         double time_to_seconds = hour*3600.0 + minutes*60 + second;
-        double time_to_hour = hour + minutes/60 + second/3600f;
+        double time_to_hour = hour + minutes/60f + second/3600f;
 
         double speed_m_s = distance_m/time_to_seconds;
         double speed_km_h = distance_m/1000/time_to_hour;
