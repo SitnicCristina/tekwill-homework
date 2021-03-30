@@ -12,19 +12,18 @@ public class InternetServiceProvider {
         int hoursUsed = in.nextInt();
 
         //Calculate and display the monthly bill of internet service
-        double totalCharges;
+        double totalCharges = 0;
         if(packageType.equalsIgnoreCase("A")){
             totalCharges = (hoursUsed > 10) ? 9.95 + (hoursUsed-10)*2 : 9.95;
-            System.out.println("The total bill for package A and " + hoursUsed + " hours used is: " + totalCharges + "$");
         }else if(packageType.equalsIgnoreCase("B")){
             totalCharges = (hoursUsed > 20) ? 13.95 + (hoursUsed-20) : 13.95;
-            System.out.println("The total bill for package B and " + hoursUsed + " hours used is: " + totalCharges + "$");
         }else if(packageType.equalsIgnoreCase("C")){
             totalCharges = 19.95;
-            System.out.println("The total bill for package C and " + hoursUsed + " hours used is: " + totalCharges + "$");
         }else
         {
             System.out.println("Enter the correct internet subscription package A, B or C!");
         }
+
+        System.out.println("The total bill for package " + packageType + " and " + hoursUsed + " hours used is: " + totalCharges + "$");
     }
 }
