@@ -13,6 +13,7 @@ The devices and printed statements are completely up to you. You decide what doe
 Limit yourself to 10 cases, so it means 5 devices with 2 options: enable/disabled, and each action assigned to a code,
 which is also up to your choosing.
 */
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -24,25 +25,36 @@ public class EnableDisableDevice {
         System.out.print("\nInput key 1 for enable , 0 for disable: ");
         int key = in.nextInt();
 
-        if (key == 0){
+        if (key == 0) {
             switch (device) {
-                case "light" -> System.out.println("You've disabled the lights in the bathroom");
-                case "TV" -> System.out.println("You've turn off the TV in living room");
-                case "coffee" -> System.out.println("You've turn off the coffee machine in kitchen");
-                case "alarm" -> System.out.println("You've disable the alarm");
-                case "music" -> System.out.println("You've stop the music");
-                default -> System.out.println("The program doesn't recognise the device! ");
+                case "light":
+                    System.out.println("You've disabled the lights in the bathroom");
+                    break;
+                case "TV":
+                    System.out.println("You've turn off the TV in living room");
+                    break;
+                case "coffee":
+                    System.out.println("You've turn off the coffee machine in kitchen");
+                    break;
+                case "alarm":
+                    System.out.println("You've disable the alarm");
+                    break;
+                case "music":
+                    System.out.println("You've stop the music");
+                    break;
+                default:
+                    System.out.println("The program doesn't recognise the device! ");
             }
-        }else if(key == 1){
+        } else if (key == 1) {
             switch (device) {
-                case "light" -> System.out.println("You've enable the lights in the bathroom");
-                case "TV" -> System.out.println("You've turn on the TV in living room");
-                case "coffee" -> System.out.println("You've turn on the coffee machine in kitchen");
-                case "alarm" -> System.out.println("You've enable the alarm");
-                case "music" -> System.out.println("You've start the music");
-                default -> System.out.println("The program doesn't recognise the device! ");
+                case "light" : System.out.println("You've enable the lights in the bathroom");break;
+                case "TV" : System.out.println("You've turn on the TV in living room");break;
+                case "coffee" : System.out.println("You've turn on the coffee machine in kitchen");break;
+                case "alarm" : System.out.println("You've enable the alarm");break;
+                case "music" : System.out.println("You've start the music");break;
+                default : System.out.println("The program doesn't recognise the device! ");
             }
-        }else {
+        } else {
             System.out.println("Enter a 1 for enable and 0 for disable!");
         }
     }
