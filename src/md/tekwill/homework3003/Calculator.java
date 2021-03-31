@@ -35,20 +35,22 @@ public class Calculator {
         switch (operator) {
             case '+':
                 result = nbr1 + nbr2;
+                System.out.println("the result is: " + nbr1 + operator + nbr2 + "=" + result);
                 break;
             case '-':
                 result = nbr1 - nbr2;
+                System.out.println("the result is: " + nbr1 + operator + nbr2 + "=" + result);
                 break;
             case '/':
                 result = nbr1 / nbr2;
+                System.out.println("the result is: " + nbr1 + operator + nbr2 + "=" + result);
                 break;
             case '*':
                 result = nbr1 * nbr2;
+                System.out.println("the result is: " + nbr1 + operator + nbr2 + "=" + result);
                 break;
             default:
                 System.out.println("The program can't recognise the operator");
         }
-        System.out.println("the result is: " + nbr1 + operator + nbr2 + "=" + result);
-
     }
 }

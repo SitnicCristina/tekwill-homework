@@ -16,7 +16,7 @@ public class PressKey {
         System.out.print("Enter the key: ");
         Scanner in = new Scanner(System.in);
         String keyTemp = in.nextLine();
-        String keyTempUppercase = keyTemp.toUpperCase(Locale.ROOT);
+        String keyTempUppercase = keyTemp.toUpperCase();
         char key = keyTempUppercase.charAt(0);
 
         switch (key) {
