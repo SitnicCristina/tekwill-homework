@@ -11,6 +11,7 @@ public class CumulativeSumEntry {
         System.out.print("Enter the number: ");
         int entryNumber = in.nextInt();
 
+        //varianta 1
         int summ = 0;
 
         for (; entryNumber != 0; ) {
@@ -18,6 +19,14 @@ public class CumulativeSumEntry {
             System.out.println("Total sum is: " + summ);
             System.out.print("\nEnter the number: ");
             entryNumber = in.nextInt();
+        }
+
+        //varianta 2
+        summ = 0;
+        for (int entryNumber1 = in.nextInt(); entryNumber1 != 0; entryNumber1 = in.nextInt() ) {
+            summ += entryNumber1;
+            System.out.println("Total sum is: " + summ);
+            System.out.print("\nEnter the number: ");
         }
 
     }

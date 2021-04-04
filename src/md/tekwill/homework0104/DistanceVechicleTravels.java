@@ -16,13 +16,13 @@ public class DistanceVechicleTravels {
         int distanceTraveled = 0;
 
         //display the report table header
-        System.out.println("Hour     Distance Traveled");
+        System.out.println("Hour\tDistance Traveled");
         System.out.println("__________________________");
 
         //display the table result
         for (int i=1; i<=time; i++){
             distanceTraveled = speed * i;
-            System.out.println(i + "        " + distanceTraveled);
+            System.out.println(i + "\t" + distanceTraveled);
         }
     }
 }
