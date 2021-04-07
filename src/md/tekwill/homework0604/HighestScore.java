@@ -15,11 +15,11 @@ public class HighestScore {
         String nameHighestScore ="";
 
         do {
-            Scanner in1 = new Scanner(System.in);
+            in.nextLine();
             System.out.print("\nEnter the name of student: ");
-            String name = in1.nextLine();
+            String name = in.nextLine();
             System.out.print("Enter the score: ");
-            int score = in1.nextInt();
+            int score = in.nextInt();
 
             if (score > highestScore) {
                 highestScore = score;
