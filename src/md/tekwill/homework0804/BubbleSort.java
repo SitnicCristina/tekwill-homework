@@ -45,9 +45,9 @@ public class BubbleSort {
         }
 
         //print the sorted array
-        System.out.println("/nElements of array in sorted ascending order: ");
-        for (int m = 0; m < nbrElements; m++) {
-            System.out.print(array[m] + " ");
+        System.out.println("\nElements of array in sorted ascending order (foreach): ");
+        for (int i : array) {
+            System.out.print(i + " ");
         }
     }
 }
