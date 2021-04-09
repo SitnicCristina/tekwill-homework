@@ -49,6 +49,7 @@ public class CountDuplicatesArray {
             for(int l = k+1; l<nbrElements; l++)
                 if(array[k] == array[l]){
                     countDuplicate++;
+                    break;
                 }
         }
         //Print the output sum of element in the array

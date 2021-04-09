@@ -1,25 +1,4 @@
 package md.tekwill.homework0804;
-/**
- * Write a program in Java for a 2D array (bi-dimensional array) of size 3x3 and print the matrix.
- * Test Data :
- * Input elements in the matrix :
- * element - [0],[0] : 1
- * element - [0],[1] : 2
- * element - [0],[2] : 3
- * element - [1],[0] : 4
- * element - [1],[1] : 5
- * element - [1],[2] : 6
- * element - [2],[0] : 7
- * element - [2],[1] : 8
- * element - [2],[2] : 9
- * or another representation would be
- * [1, 2, 3][4, 5, 6][7, 8, 9]
- * Expected Output :
- * The matrix is :
- * 1 2 3
- * 4 5 6
- * 7 8 9
- */
 
 import java.util.Scanner;
 
@@ -56,10 +35,10 @@ public class Matrix {
 
         //Expected result as Matrix foreach
         System.out.println("Expected Output :\n" + "The matrix is :");
-        for (int[] m : array) {
+        for (int[] list : array) {
             System.out.println();
-            for (int n : m) {
-                System.out.print(n + " ");
+            for (int number : list) {
+                System.out.print(number + " ");
             }
         }
     }
