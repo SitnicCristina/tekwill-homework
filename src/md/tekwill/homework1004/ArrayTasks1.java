@@ -23,10 +23,11 @@ public class ArrayTasks1 {
         float sum = 0;
         for (int k = 0; k < c.length; k++) {
             c[k] = rd.nextFloat();
-            System.out.print(c[k] + ",");
+            //String.format("%.2f", c[k]);
+            System.out.print(String.format("%.2f", c[k]) + ",");
             sum += c[k];
         }
-        System.out.println("\nThe sum: " + sum);
+        System.out.print("\nThe sum: " + String.format("%.2f", sum));
 
         System.out.println("\nd. Copy 11-element array a into the first portion of array b, which contains 34 elements ");
         int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 12, 13, 14, 15, 16};
@@ -49,6 +50,6 @@ public class ArrayTasks1 {
 
         Arrays.sort(w);
 
-        System.out.println("The smallest value is: " +w[0]+" and largest values is: " +w[98]);
+        System.out.println("The smallest value is: " + w[0] + " and largest values is: " + w[98]);
     }
 }
