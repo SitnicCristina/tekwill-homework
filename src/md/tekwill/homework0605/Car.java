@@ -22,14 +22,17 @@ public class Car {
         horsePowerCar = newHorsePowerCar;
     }
 
-    public void setCar(String newBrand,String newEngineType, double newCapEngine, int newHorsePowerCar, int newNrDoors, boolean newSpareWheel){
-        brand = newBrand;
-        engineType = newEngineType;
-        capacityEngine = newCapEngine;
-        horsePowerCar = newHorsePowerCar;
-        nrbDoors = newNrDoors;
-        spareWheel = newSpareWheel;
-    }
+    public void setBrand(String newBrand){ brand = newBrand; }
+
+    public void setEngineType(String newEngineType){ engineType = newEngineType; }
+
+    public void setCapacityEngine(double newCapEngine){ capacityEngine = newCapEngine; }
+
+    public void setCapacityEngine(int newHorsePowerCar){ horsePowerCar = newHorsePowerCar; }
+
+    public void setNrDoors(int newNrDoors){ nrbDoors = newNrDoors; }
+
+    public void setSpareWheel (boolean newSpareWheel ){ spareWheel = newSpareWheel; }
 
     public String getBrand() { return brand; }
 
@@ -43,14 +46,7 @@ public class Car {
 
     public boolean getSpareWheel() { return spareWheel; }
 
-    public void printDetails(Car obj){
-        System.out.println("car description: " + obj.getBrand() + "\t" + obj.getEngineType() + "\t" + obj.getCapacityEngine()+"\t"+ obj.getHorsePowerCar() + "\t" + obj.getNrbDoors() + "\t" + obj.getSpareWheel());
+    public void printDetails(){
+        System.out.println("car description: " + this.getBrand() + "\t" + this.getEngineType() + "\t" + this.getCapacityEngine()+"\t"+ this.getHorsePowerCar() + "\t" + this.getNrbDoors() + "\t" + this.getSpareWheel());
     }
-    void run() {
-        System.out.println("Car is running...");
-    }
-
-
-
-
 }
