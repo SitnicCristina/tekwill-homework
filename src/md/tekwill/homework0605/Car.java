@@ -28,7 +28,7 @@ public class Car {
 
     public void setCapacityEngine(double newCapEngine){ capacityEngine = newCapEngine; }
 
-    public void setCapacityEngine(int newHorsePowerCar){ horsePowerCar = newHorsePowerCar; }
+    public void setHorsePowerCar(int newHorsePowerCar){ horsePowerCar = newHorsePowerCar; }
 
     public void setNrDoors(int newNrDoors){ nrbDoors = newNrDoors; }
 

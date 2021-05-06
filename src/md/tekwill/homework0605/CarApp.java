@@ -16,6 +16,7 @@ public class CarApp {
         car2.setBrand("Ford Focus");
         car2.setEngineType("benzin");
         car2.setCapacityEngine(1.5);
+        car2.setHorsePowerCar(120);
         car2.setNrDoors(5);
 
         System.out.println("car2 description: " + car2.getBrand() + "\t" + car2.getEngineType() + "\t" + car2.getCapacityEngine()+"\t"+ car2.getHorsePowerCar() + "\t" + car2.getNrbDoors() + "\t" + car2.getSpareWheel());
@@ -24,7 +25,7 @@ public class CarApp {
         Car car3 = new Car("Toyota Prius","hybrid",1.7,136);
         System.out.println("car3 description: " + car3.getBrand() + "\t" + car3.getEngineType() + "\t" + car3.getCapacityEngine()+"\t"+ car3.getHorsePowerCar() + "\t" + car3.getNrbDoors() + "\t" + car3.getSpareWheel());
 
-        //default value car 
+        //default value car
         Car car4 = new Car();
         car4.printDetails();
     }
