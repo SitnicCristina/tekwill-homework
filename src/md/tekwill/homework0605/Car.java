@@ -6,7 +6,7 @@ public class Car {
     double capacityEngine;//  1.5 2
     int horsePowerCar; //90 150 220
     int nrbDoors; //3 4 5
-    boolean spareWheel;
+    boolean spareWheel;//true false
 
     public Car(){
         brand = "unknown";
